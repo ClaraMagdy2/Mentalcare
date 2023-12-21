@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Makeappointment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <!-- res/layout/activity_make_appointment.xml -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/nn">
+
+        <!-- Patient Name -->
+        <TextView
+            android:id="@+id/textViewPatientNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient Name"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/editTextPatientName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPatientNameLabel"
+            android:layout_marginTop="8dp"
+            android:hint="Enter patient name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+        <!-- Health Status -->
+        <TextView
+            android:id="@+id/textViewHealthStatusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Status"
+            android:layout_below="@+id/editTextPatientName"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/editTextHealthStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewHealthStatusLabel"
+            android:layout_marginTop="8dp"
+            android:hint="Enter health status"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <!-- Age -->
+        <TextView
+            android:id="@+id/textViewAgeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:layout_below="@+id/editTextHealthStatus"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/editTextAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewAgeLabel"
+            android:layout_marginTop="8dp"
+            android:inputType="number"
+            android:hint="Enter age"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <!-- Doctor Name -->
+        <TextView
+            android:id="@+id/textViewDoctorNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor Name"
+            android:layout_below="@+id/editTextAge"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <EditText
+            android:id="@+id/editTextDoctorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDoctorNameLabel"
+            android:layout_marginTop="8dp"
+            android:hint="Enter doctor name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <!-- Appointment Date -->
+        <TextView
+            android:id="@+id/textViewAppointmentDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment Date"
+            android:layout_below="@+id/editTextDoctorName"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <DatePicker
+            android:id="@+id/datePickerAppointmentDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewAppointmentDateLabel"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <!-- Button to Make Appointment -->
+        <Button
+            android:id="@+id/buttonMakeAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/datePickerAppointmentDate"
+            android:layout_marginTop="16dp"
+            android:text="Make Appointment"
+            />
+    </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

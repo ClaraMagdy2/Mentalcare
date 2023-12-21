@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profilepatient"
+    android:background="#AF8888">
+    <!-- res/layout/patient_profile.xml -->
+    <!-- res/layout/patient_profile.xml -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AE6565"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <Button
+            android:id="@+id/buttonDeleteAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="302dp"
+            android:backgroundTint="@color/nn"
+            android:text="Delete Account"
+            android:textSize="16sp"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="356dp" />
+
+        <ImageView
+            android:id="@+id/imageViewProfilePhoto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="173dp"
+            android:layout_marginBottom="572dp"
+            android:foreground="@drawable/baseline_person_24"
+            tools:layout_editor_absoluteX="134dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/buttonAddPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="115dp"
+            android:layout_marginBottom="565dp"
+            android:background="#171515"
+            android:foreground="@drawable/baseline_camera_alt_24"
+            android:onClick="onAddPhotoClick"
+            app:backgroundTint="#733030"
+            tools:layout_editor_absoluteX="228dp"
+            tools:layout_editor_absoluteY="106dp" />
+
+        <TextView
+            android:id="@+id/textViewPatientUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="424dp"
+
+
+
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="195dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/textViewPatientEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="374dp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="257dp"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

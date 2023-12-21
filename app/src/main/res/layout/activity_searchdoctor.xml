@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Searchdoctor">
+    <!-- res/layout/search_doctor.xml -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/nn">
+
+        <!-- Search EditText -->
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_person_search_24"
+            android:hint="Enter doctor's name"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <!-- Search Button -->
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/nn"
+            />
+
+        <Button
+            android:id="@+id/chat"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:foreground="@drawable/baseline_chat_24"
+            android:text="chat"
+            app:backgroundTint="#832020" />
+        <!-- Display Search Results -->
+        <TextView
+            android:id="@+id/textViewSearchResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+        <!-- Doctor Appointments List -->
+        <ListView
+            android:id="@+id/listViewDoctorAppointments"
+            android:layout_width="wrap_content"
+            android:layout_height="328dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="#BDAFAF" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
